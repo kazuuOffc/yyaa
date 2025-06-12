@@ -1,0 +1,80 @@
+Saya bisa membantu Anda membuat contoh kode HTML dan CSS sederhana untuk membuat halaman web payment seperti yang Anda deskripsikan. Namun, perlu diingat bahwa saya tidak bisa membuat website langsung secara fungsional tanpa integrasi backend dan hosting. Berikut adalah contoh kode yang bisa Anda gunakan sebagai dasar:
+
+HTML (index.html)
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Kazunotdev Payment</h1>
+        <div class="payment-box">
+            <div class="payment-method">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/DANA_logo.svg/1200px-DANA_logo.svg.png" alt="DANA Logo" class="logo">
+                <p>Nomor DANA: 088200501327</p>
+            </div>
+            <div class="payment-method">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Logo_GOPAY.svg/1024px-Logo_GOPAY.svg.png" alt="GOPAY Logo" class="logo">
+                <p>Nomor GOPAY: 0882005013227</p>
+            </div>
+            <div class="payment-method">
+                <img src="https://files.catbox.moe/qdopms.jpg" alt="QRIS Logo" class="logo-qris">
+                <p>Scan QRIS: <a href="https://files.catbox.moe/qdopms.jpg">https://files.catbox.moe/qdopms.jpg</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+CSS (style.css)
+```
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.payment-box {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.payment-method {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.logo-qris {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+```
